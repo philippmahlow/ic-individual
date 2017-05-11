@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Local Shopware">
+    <serverData>
+      <paths name="Local Shopware">
+        <serverdata>
+          <mappings>
+            <mapping deploy="themes/Frontend/ShopwareDemo" local="$PROJECT_DIR$/Theme" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

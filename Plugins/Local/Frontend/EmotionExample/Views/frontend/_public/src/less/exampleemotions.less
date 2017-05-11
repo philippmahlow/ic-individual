@@ -1,0 +1,49 @@
+.emotion--element .background-container {
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  .unitize(padding-left, 25);
+  .unitize(padding-right, 25);
+  position: relative;
+
+  .layout-container {
+    position: absolute;
+
+    p {
+      margin-bottom: 0;
+
+      &.row1 {
+        .unitize(font-size, 22);
+        font-weight: bold;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+      }
+
+      &.row2 {
+        .unitize(font-size, 35);
+        font-weight: bold;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+      }
+
+      &.button-container {
+        .unitize(margin-top, 10);
+        .btn {
+          background-color: #d93116;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.58);
+          background-image: none;
+          color: #ffffff;
+          border: 0;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

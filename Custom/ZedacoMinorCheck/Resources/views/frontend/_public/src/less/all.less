@@ -1,0 +1,93 @@
+.perso-check {
+  .passport-image {
+    width: 100%;
+  }
+
+  .passport-form {
+    width: 100%;
+
+    .row {
+      width: 100%;
+
+      .passport-block {
+        label, input {
+          display: block;
+        }
+
+        input {
+          width: 100%;
+        }
+
+        float: left;
+        width:49%;
+        margin-left: 2%;
+
+        &:nth-of-type(odd) {
+          margin-left: 0;
+        }
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+
+    .hint {
+      clear: both;
+      .unitize(margin-top, 10);
+      .unitize(margin-bottom, 10);
+    }
+
+    button {
+      float: right;
+    }
+  }
+}
+
+.tab-menu--perso {
+  .unitize-margin(0, 0, 10, 0);
+
+  .tab--navigation {
+    display: block;
+  }
+
+  .tab--header,
+  .tab--preview {
+    display: none;
+  }
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+  .perso-check {
+    .passport-image {
+      width: 47%;
+      float: left;
+      margin-right: 6%;
+    }
+
+    .passport-form {
+      width: 47%;
+      float: right;
+
+      .row {
+        .passport-block {
+          float: left;
+          width: 24%;
+          margin-left: 1.33%;
+
+
+          &:nth-of-type(odd) {
+            margin-left: 1.33%;
+          }
+
+          &:first-of-type {
+            margin-left: 0;
+          }
+
+        }
+      }
+    }
+  }
+}

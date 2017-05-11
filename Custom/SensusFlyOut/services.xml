@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="sensus_flyout.cache_dir">%kernel.cache_dir%/SensusFlyOut</parameter>
+        <parameter key="sensus_flyout.view_dir">%shyim_profiler.plugin_dir%/Resources/views</parameter>
+    </parameters>
+
+    <services>
+        <!-- Custom Services -->
+        <!--<service id="shyim_profiler.smarty_extensions" class="ShyimProfiler\Components\SmartyExtensions"/>-->
+
+
+        <service id="sensus_flyout.cache" class="Doctrine\Common\Cache\FilesystemCache">
+            <argument type="string">%sensus_flyout.cache_dir%</argument>
+        </service>
+
+    </services>
+</container>

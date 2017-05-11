@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.2/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+
+
+        <!--
+        1. Dimension options
+
+        These options define the banner dimension which you plan on using.
+
+        dim-234x60 = banner dimension for 234x60px
+        dim-468x60 = banner dimension for 468x60px
+        dim-728x90 = banner dimension for 728x90px
+        dim-120x240 = banner dimension for 120x240px
+        dim-120x600 = banner dimension for 120x600px
+        dim-160x600 = banner dimension for 160x600px
+        dim-300x600 = banner dimension for 300x600px
+        dim-88x31 = banner dimension for 88x31px
+        dim-300x250 = banner dimension for 300x250px
+        dim-336x280 = banner dimension for 336x280px
+        dim-125x125 = banner dimension for 125x125px
+        dim-200x200 = banner dimension for 200x200px
+        dim-250x250 = banner dimension for 250x250px
+        dim-custom = banner dimension for your custom size
+        -->
+        <element type="select">
+            <name>dimension</name>
+            <label>Dimension</label>
+            <store>
+                <option>
+                    <value>dim-234x60</value>
+                    <label lang="en">banner dimension for 234 x 60px</label>
+                </option>
+                <option>
+                    <value>dim-468x60</value>
+                    <label lang="en">banner dimension for 468 x 60px</label>
+                </option>
+                <option>
+                    <value>dim-728x90</value>
+                    <label lang="en">banner dimension for 728 x 90px</label>
+                </option>
+                <option>
+                    <value>dim-120x240</value>
+                    <label lang="en">banner dimension for 120 x 240px</label>
+                </option>
+                <option>
+                    <value>dim-120x600</value>
+                    <label lang="en">banner dimension for 120 x 600px</label>
+                </option>
+                <option>
+                    <value>dim-160x600</value>
+                    <label lang="en">banner dimension for 160 x 600px</label>
+                </option>
+                <option>
+                    <value>dim-300x600</value>
+                    <label lang="en">banner dimension for 300 x 600px</label>
+                </option>
+                <option>
+                    <value>dim-88x31</value>
+                    <label lang="en">banner dimension for 88 x 31px</label>
+                </option>
+                <option>
+                    <value>dim-300x250</value>
+                    <label lang="en">banner dimension for 300 x 250px</label>
+                </option>
+                <option>
+                    <value>dim-336x280</value>
+                    <label lang="en">banner dimension for 336 x 280px</label>
+                </option>
+                <option>
+                    <value>dim-125x125</value>
+                    <label lang="en">banner dimension for 125 x 125px</label>
+                </option>
+                <option>
+                    <value>dim-200x200</value>
+                    <label lang="en">banner dimension for 200 x 200px</label>
+                </option>
+                <option>
+                    <value>dim-250x250</value>
+                    <label lang="en">banner dimension for 250 x 250px</label>
+                </option>
+                <option>
+                    <value>dim-custom</value>
+                    <label lang="en">banner dimension for your custom size</label>
+                </option>
+            </store>
+        </element>
+
+        <!--
+        2. Position options
+
+        These options define the banner position on the screen.
+
+        top-left = top left position on the screen
+        top-middle = top middle position on the screen
+        top-right = top right position on the screen
+        bottom-left = bottom left position on the screen
+        bottom-middle = bottom middle position on the screen
+        bottom-right = bottom right position on the screen
+        center = center position on the screen
+        position-custom = hides
+
+        -->
+        <element type="select">
+            <name>position</name>
+            <label>Position</label>
+            <store>
+                <option>
+                    <value>top-left</value>
+                    <label lang="en">top left position on the screen</label>
+                </option>
+                <option>
+                    <value>top-middle</value>
+                    <label lang="en">top middle position on the screen</label>
+                </option>
+                <option>
+                    <value>top-right</value>
+                    <label lang="en">top right position on the screen</label>
+                </option>
+                <option>
+                    <value>bottom-left</value>
+                    <label lang="en">bottom left position on the screen</label>
+                </option>
+                <option>
+                    <value>bottom-middle</value>
+                    <label lang="en">bottom middle position on the screen</label>
+                </option>
+                <option>
+                    <value>bottom-right</value>
+                    <label lang="en">bottom right position on the screen</label>
+                </option>
+                <option>
+                    <value>center</value>
+                    <label lang="en">center position on the screen</label>
+                </option>
+                <option>
+                    <value>position-custom</value>
+                    <label lang="en">hides</label>
+                </option>
+            </store>
+        </element>
+
+
+        <!--
+        3. Margins
+
+        You can set the margins of the banner with help from the folowing options.
+
+        margin-1 = applies 1% margin around the banner
+        margin-2 = applies 2% margin around the banner
+        margin-4 = applies 4% margin around the banner
+        margin-6 = applies 6% margin around the banner
+        margin-8 = applies 8% margin around the banner
+        margin-10 = applies 10% margin around the banner
+
+        -->
+        <element type="select">
+            <name>margin</name>
+            <label>Margins</label>
+            <store>
+                <option>
+                    <value>margin-1</value>
+                    <label lang="en">applies 1% margin around the banner</label>
+                </option>
+                <option>
+                    <value>margin-2</value>
+                    <label lang="en">applies 2% margin around the banner</label>
+                </option>
+                <option>
+                    <value>margin-4</value>
+                    <label lang="en">applies 4% margin around the banner</label>
+                </option>
+                <option>
+                    <value>margin-6</value>
+                    <label lang="en">applies 6% margin around the banner</label>
+                </option>
+                <option>
+                    <value>margin-8</value>
+                    <label lang="en">applies 8% margin around the banner</label>
+                </option>
+                <option>
+                    <value>margin-10</value>
+                    <label lang="en">applies 10% margin around the banner</label>
+                </option>
+            </store>
+        </element>
+
+        <!--
+        4. Visual effects
+
+        Every banner can have some visual effects for better look. Here are some predefined.
+
+        shadow = applies a shadow behind the banner
+        border = applies border around the banner
+        transparency = gives the banner some transparency
+
+        -->
+        <element type="select">
+            <name>visual_effects</name>
+            <label>Visual effects</label>
+            <store>
+                <option>
+                    <value>shadow</value>
+                    <label lang="en">applies a shadow behind the banner</label>
+                </option>
+                <option>
+                    <value>border</value>
+                    <label lang="en">applies border around the banner</label>
+                </option>
+                <option>
+                    <value>transparency</value>
+                    <label lang="en">gives the banner some transparency</label>
+                </option>
+            </store>
+        </element>
+
+        <!--
+        5. Transitions animation
+
+        Banner can have a nice transition upon closing of flying out when delayed. You can define the folowing transitions:
+
+        linear = banner will have a linear transition upon animating
+        ease = banner will have an easing transition upon animating
+        ease-in = banner will have an easing-in transition upon animating
+        ease-out = banner will have an easing-in transition upon animating
+        ease-in-out = banner will have an easing-in-out transition upon animating
+
+        -->
+        <element type="select">
+            <name>animation</name>
+            <label>Transitions animation</label>
+            <store>
+                <option>
+                    <value>linear</value>
+                    <label lang="en">banner will have a linear transition upon animating</label>
+                </option>
+                <option>
+                    <value>ease</value>
+                    <label lang="en">banner will have an easing transition upon animating</label>
+                </option>
+                <option>
+                    <value>ease-in</value>
+                    <label lang="en">banner will have an easing-in transition upon animating</label>
+                </option>
+                <option>
+                    <value>ease-out</value>
+                    <label lang="en">banner will have an easing-in transition upon animating</label>
+                </option>
+                <option>
+                    <value>ease-in-out</value>
+                    <label lang="en">banner will have an easing-in-out transition upon animating</label>
+                </option>
+            </store>
+        </element>
+
+        <!--
+        6. Transitions speed
+
+        With animation you can also define the speed of that animation.
+
+        fast = animation will be faster
+        medium = animation will be normal
+        slow = animation will be slower
+
+        -->
+        <element type="select">
+            <name>speed</name>
+            <label>Transitions speed</label>
+            <store>
+                <option>
+                    <value>fast</value>
+                    <label lang="en">animation will be faster</label>
+                </option>
+                <option>
+                    <value>medium</value>
+                    <label lang="en">animation will be normal</label>
+                </option>
+                <option>
+                    <value>slow</value>
+                    <label lang="en">animation will be slower</label>
+                </option>
+            </store>
+        </element>
+
+        <!--
+        7. Transitions effect
+
+        Define which kind of effect you will like to use to animate the banner:
+
+        slide = banner will slide
+        fade = banner will fade
+
+        -->
+        <element type="select">
+            <name>effect</name>
+            <label>Transitions effect</label>
+            <store>
+                <option>
+                    <value>slide</value>
+                    <label lang="en">banner will slide</label>
+                </option>
+                <option>
+                    <value>fade</value>
+                    <label lang="en">banner will fade</label>
+                </option>
+            </store>
+        </element>
+
+        <!--
+        8. Close button
+
+        You can also pick from four close button styles.
+
+        circle-1 = circeled close button without text
+        circle-2 = circeled close button with text
+        labeled = labeled close button
+        text = close button with text only
+
+        -->
+        <element type="select">
+            <name>button</name>
+            <label>Close button</label>
+            <store>
+                <option>
+                    <value>circle-1</value>
+                    <label lang="en">circeled close button without text</label>
+                </option>
+                <option>
+                    <value>circle-2</value>
+                    <label lang="en">circeled close button with text</label>
+                </option>
+                <option>
+                    <value>labeled</value>
+                    <label lang="en">labeled close button</label>
+                </option>
+                <option>
+                    <value>text</value>
+                    <label lang="en">close button with text only</label>
+                </option>
+            </store>
+        </element>
+
+        <!--
+        9. Additional options
+
+        Special options are defined by folowing selectors.
+
+        hidden = hides the banner on page load. This option is used when delaying a banner with javascript (in the Advanced options section below).
+
+        -->
+        <element type="boolean">
+            <name>hidden</name>
+                <label>hides the banner on page load. This option is used when delaying a banner with javascript</label>
+            <value>1</value>
+        </element>
+
+    </elements>
+</config>
